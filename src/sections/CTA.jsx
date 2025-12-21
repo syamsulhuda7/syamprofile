@@ -4,9 +4,23 @@ export default function CTA() {
       <h2 className="text-4xl font-bold mb-6">
         Siap Bangun Website Profesional?
       </h2>
-      <button className="px-10 py-4 rounded-xl bg-white text-indigo-600 font-semibold">
+      <a
+        href="https://wa.me/6281229670740"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="
+    inline-flex items-center justify-center
+    px-10 py-4
+    rounded-xl
+    bg-white
+    text-indigo-600
+    font-semibold
+    hover:bg-white/90
+    transition
+  "
+      >
         Hubungi Saya
-      </button>
+      </a>
     </section>
   );
 }

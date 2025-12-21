@@ -1,7 +1,7 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import projects from "../data/projects.json";
 import { FiExternalLink, FiX } from "react-icons/fi";
+import projects from "../data/projects.json";
 
 const FILTERS = [
   { label: "All Projects", value: "all" },
@@ -12,15 +12,35 @@ const FILTERS = [
 export default function Projects() {
   const [activeProject, setActiveProject] = useState(null);
   const [activeFilter, setActiveFilter] = useState("all");
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
 
+  /* ================= FILTER ================= */
   const filteredProjects = useMemo(() => {
     if (activeFilter === "all") return projects;
     return projects.filter((p) => p.type === activeFilter);
   }, [activeFilter]);
 
+  /* ================= RESET IMAGE SAAT MODAL BUKA ================= */
+  useEffect(() => {
+    if (activeProject) {
+      setActiveImageIndex(0);
+    }
+  }, [activeProject]);
+
+  /* ================= AUTO SLIDE 5 DETIK ================= */
+  useEffect(() => {
+    if (!activeProject || !activeProject.picts?.length) return;
+
+    const interval = setInterval(() => {
+      setActiveImageIndex((prev) => (prev + 1) % activeProject.picts.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [activeProject]);
+
   return (
     <>
-      {/* SECTION */}
+      {/* ================= SECTION ================= */}
       <section className="py-28 max-w-7xl mx-auto px-6">
         {/* Heading */}
         <motion.div
@@ -37,15 +57,14 @@ export default function Projects() {
           </p>
         </motion.div>
 
-        {/* FILTER */}
+        {/* ================= FILTER ================= */}
         <div className="flex flex-wrap gap-3 mb-14">
           {FILTERS.map((f) => (
             <button
               key={f.value}
               onClick={() => setActiveFilter(f.value)}
               className={`
-                px-5 py-2 rounded-full text-sm font-medium transition
-                border
+                px-5 py-2 rounded-full text-sm font-medium transition border
                 ${
                   activeFilter === f.value
                     ? "bg-[var(--accent)] text-white border-[var(--accent)]"
@@ -58,7 +77,7 @@ export default function Projects() {
           ))}
         </div>
 
-        {/* GRID */}
+        {/* ================= GRID ================= */}
         <AnimatePresence mode="wait">
           <motion.div
             key={activeFilter}
@@ -77,34 +96,29 @@ export default function Projects() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.06 }}
                 className="
-                  text-left
-                  group
-                  rounded-2xl
-                  overflow-hidden
-                  border border-white/10
-                  bg-white/5 backdrop-blur
+                  text-left group rounded-2xl overflow-hidden
+                  border border-white/10 bg-white/5 backdrop-blur
                   hover:border-[var(--accent)]
-                  hover:-translate-y-2
-                  transition-all
+                  hover:-translate-y-2 transition-all
                 "
               >
-                {/* Thumbnail */}
+                {/* Thumbnail preview */}
                 <div className="relative h-52 overflow-hidden group">
                   <img
                     src={p.thumbnail}
                     alt={p.title}
                     className="
-      absolute top-0 left-0 w-full
-      will-change-transform
-      transition-transform duration-7000 ease-in-out
-      group-hover:-translate-y-[calc(100%-13rem)]
-    "
+                      absolute top-0 left-0 w-full
+                      will-change-transform
+                      transition-transform duration-[7000ms] ease-in-out
+                      group-hover:-translate-y-[calc(100%-13rem)]
+                    "
                   />
                 </div>
 
                 {/* Content */}
                 <div className="p-5">
-                  <span className="text-xs uppercase tracking-wide opacity-70">
+                  <span className="text-xs tracking-wide opacity-70 px-3 py-1 border rounded-full">
                     {p.category}
                   </span>
                   <h3 className="mt-1 font-semibold text-lg">{p.title}</h3>
@@ -118,7 +132,7 @@ export default function Projects() {
         </AnimatePresence>
       </section>
 
-      {/* MODAL */}
+      {/* ================= MODAL ================= */}
       <AnimatePresence>
         {activeProject && (
           <motion.div
@@ -132,31 +146,61 @@ export default function Projects() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
               className="
-                relative
-                w-full max-w-3xl
-                bg-[var(--bg)]
-                rounded-2xl
-                p-6 sm:p-8
+                relative w-full max-w-3xl bg-[var(--bg)]
+                rounded-2xl p-6 sm:p-8
                 border border-white/10
-                max-h-[90vh]
-                overflow-y-auto
+                max-h-[90vh] overflow-y-auto scroll-none
               "
             >
               {/* Close */}
               <button
                 onClick={() => setActiveProject(null)}
-                className="absolute top-4 right-4 p-2 rounded-lg hover:bg-white/10"
+                className="absolute top-3 right-3 p-2 rounded-lg hover:bg-white/10"
               >
                 <FiX size={20} />
               </button>
 
-              {/* Header */}
-              <img
-                src={activeProject.thumbnail}
-                alt={activeProject.title}
-                className="rounded-xl mb-6"
-              />
+              {/* ================= MAIN IMAGE ================= */}
+              <div className="relative w-full h-[400px] bg-white/5 rounded-2xl mb-4 p-4 overflow-hidden">
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={activeImageIndex}
+                    src={activeProject.picts[activeImageIndex]}
+                    alt={activeProject.title}
+                    initial={{ opacity: 0, scale: 0.98 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.98 }}
+                    transition={{ duration: 0.4 }}
+                    className="w-full h-full object-contain"
+                  />
+                </AnimatePresence>
+              </div>
 
+              {/* ================= THUMBNAILS ================= */}
+              <div className="flex flex-wrap justify-center gap-3 mb-6">
+                {activeProject.picts.map((img, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setActiveImageIndex(i)}
+                    className={`
+                      rounded-xl overflow-hidden border-2 transition
+                      ${
+                        activeImageIndex === i
+                          ? "border-[var(--accent)] scale-105"
+                          : "border-transparent opacity-70 hover:opacity-100"
+                      }
+                    `}
+                  >
+                    <img
+                      src={img}
+                      alt={`Preview ${i}`}
+                      className="h-20 w-20 object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+
+              {/* ================= CONTENT ================= */}
               <h2 className="text-3xl font-bold mb-1">{activeProject.title}</h2>
               <p className="opacity-70 mb-6">
                 {activeProject.industry} • {activeProject.category}
@@ -201,10 +245,8 @@ export default function Projects() {
                 rel="noopener noreferrer"
                 className="
                   inline-flex items-center gap-2
-                  px-6 py-3
-                  rounded-xl
-                  bg-[var(--accent)]
-                  text-white font-medium
+                  px-6 py-3 rounded-xl
+                  bg-[var(--accent)] text-white font-medium
                   hover:scale-105 transition
                 "
               >

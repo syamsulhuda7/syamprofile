@@ -25,6 +25,10 @@ body {
   color: var(--text);
 }
 
+.scroll-none {
+  scrollbar-width: none;
+}
+
 /* :root {
   --bg-primary: #ffffff;
   --bg-secondary: #f1f5f9;

@@ -1,63 +1,25 @@
 [
+  
   {
-    "id": "syamrent",
-    "title": "SyamRent",
-    "category": "Landing Page",
-    "industry": "Vehicle Rental",
-    "thumbnail": "/projects/carall.webp",
-    "description": "Landing page jasa rental kendaraan yang fokus pada kemudahan pemesanan dan konversi pelanggan.",
-    "problem": "Bisnis rental membutuhkan website sederhana namun meyakinkan agar calon pelanggan cepat memahami layanan dan langsung melakukan booking.",
-    "solution": "Membuat landing page dengan struktur konversi tinggi, CTA WhatsApp langsung, dan tampilan mobile-first.",
+    "id": "goldlux",
+    "title": "GoldLux",
+    "category": "Company Profile",
+    "industry": "Luxury Jewelry",
+    "thumbnail": "/projects/goldall.webp",
+    "picts": ["/projects/goldall.webp", "/projects/goldmb.png", "/projects/goldpc.png"],
+    "description": "Company profile brand perhiasan premium dengan visual luxury dan teknologi modern.",
+    "problem": "Brand perhiasan membutuhkan website yang mencerminkan eksklusivitas dan teknologi modern.",
+    "solution": "Desain luxury dengan dark mode, animasi halus, dan AR preview produk.",
     "features": [
-      "Hero section dengan CTA kuat",
-      "Daftar kendaraan mobil & motor",
-      "Informasi harga & paket sewa",
-      "Tombol booking WhatsApp",
-      "Desain responsif"
+      "Desain luxury (dark mode & gold accent)",
+      "Showcase produk perhiasan",
+      "Wishlist produk",
+      "AR Preview (3D .glb)",
+      "Multibahasa"
     ],
     "tech": ["React", "Tailwind CSS", "Framer Motion"],
-    "link": "https://syamrent.com",
-    "type": "landing-page"
-  },
-  {
-    "id": "sewacamp",
-    "title": "SewaCamp",
-    "category": "Landing Page",
-    "industry": "Camping Equipment Rental",
-    "thumbnail": "/projects/campall.webp",
-    "description": "Landing page persewaan alat camping untuk pendaki dan pecinta alam.",
-    "problem": "Calon penyewa kesulitan mengetahui ketersediaan dan kondisi alat sebelum menyewa.",
-    "solution": "Menyediakan katalog alat camping yang jelas, informatif, dan mudah diakses melalui mobile.",
-    "features": [
-      "Katalog alat camping",
-      "Deskripsi fungsi & kondisi alat",
-      "Informasi harga sewa",
-      "CTA WhatsApp",
-      "Desain outdoor & clean"
-    ],
-    "tech": ["React", "Tailwind CSS"],
-    "link": "https://sewacamp.com",
-    "type": "landing-page"
-  },
-  {
-    "id": "decoration-rent",
-    "title": "Decoration Rent",
-    "category": "Landing Page",
-    "industry": "Event & Decoration",
-    "thumbnail": "/projects/decorall.webp",
-    "description": "Website jasa dekorasi acara untuk meningkatkan kepercayaan klien melalui visual.",
-    "problem": "Calon klien membutuhkan bukti visual hasil dekorasi sebelum memesan jasa.",
-    "solution": "Menampilkan galeri hasil dekorasi, paket layanan, dan testimoni klien.",
-    "features": [
-      "Galeri foto dekorasi",
-      "Paket & layanan custom",
-      "Testimoni klien",
-      "CTA konsultasi cepat",
-      "Visual elegan"
-    ],
-    "tech": ["React", "Tailwind CSS", "Swiper"],
-    "link": "https://decorationrent.com",
-    "type": "landing-page"
+    "link": "https://goldlux-roan.vercel.app/",
+    "type": "company-profile"
   },
   {
     "id": "seedcorp",
@@ -65,6 +27,7 @@
     "category": "Company Profile",
     "industry": "Agriculture & Seeds",
     "thumbnail": "/projects/seedall.webp",
+    "picts": ["/projects/seedall.webp", "/projects/seedmb.png", "/projects/seedpc.png"],
     "description": "Company profile perusahaan benih pertanian dengan fokus kredibilitas dan edukasi.",
     "problem": "Perusahaan membutuhkan website resmi untuk membangun kepercayaan petani dan mitra.",
     "solution": "Membuat website informatif, profesional, dan mudah dipahami.",
@@ -76,27 +39,70 @@
       "Kontak & lokasi"
     ],
     "tech": ["React", "Tailwind CSS"],
-    "link": "https://seedcorp.com",
+    "link": "https://seedcorp-afup.vercel.app/",
     "type": "company-profile"
   },
   {
-    "id": "goldlux",
-    "title": "GoldLux",
-    "category": "Company Profile",
-    "industry": "Luxury Jewelry",
-    "thumbnail": "/projects/goldall.webp",
-    "description": "Company profile brand perhiasan premium dengan visual luxury dan teknologi modern.",
-    "problem": "Brand perhiasan membutuhkan website yang mencerminkan eksklusivitas dan teknologi modern.",
-    "solution": "Desain luxury dengan dark mode, animasi halus, dan AR preview produk.",
+    "id": "decoration-rent",
+    "title": "Decoration Rent",
+    "category": "Landing Page",
+    "industry": "Event & Decoration",
+    "thumbnail": "/projects/decorall.webp",
+    "picts": ["/projects/decorall.webp", "/projects/decormb.png", "/projects/decorpc.png"],
+    "description": "Website jasa dekorasi acara untuk meningkatkan kepercayaan klien melalui visual.",
+    "problem": "Calon klien membutuhkan bukti visual hasil dekorasi sebelum memesan jasa.",
+    "solution": "Menampilkan galeri hasil dekorasi, paket layanan, dan testimoni klien.",
     "features": [
-      "Desain luxury (dark mode & gold accent)",
-      "Showcase produk perhiasan",
-      "Wishlist produk",
-      "AR Preview (3D .glb)",
-      "Multibahasa"
+      "Galeri foto dekorasi",
+      "Paket & layanan custom",
+      "Testimoni klien",
+      "CTA konsultasi cepat",
+      "Visual elegan"
     ],
-    "tech": ["React", "Tailwind CSS", "Framer Motion", "Three.js"],
-    "link": "https://goldlux.com",
-    "type": "company-profile"
+    "tech": ["React", "Tailwind CSS", "Swiper"],
+    "link": "https://decoration-rent.vercel.app/",
+    "type": "landing-page"
+  },
+  {
+    "id": "sewacamp",
+    "title": "SewaCamp",
+    "category": "Landing Page",
+    "industry": "Camping Equipment Rental",
+    "thumbnail": "/projects/campall.webp",
+    "picts": ["/projects/campall.webp", "/projects/campmb.png", "/projects/camppc.png"],
+    "description": "Landing page persewaan alat camping untuk pendaki dan pecinta alam.",
+    "problem": "Calon penyewa kesulitan mengetahui ketersediaan dan kondisi alat sebelum menyewa.",
+    "solution": "Menyediakan katalog alat camping yang jelas, informatif, dan mudah diakses melalui mobile.",
+    "features": [
+      "Katalog alat camping",
+      "Deskripsi fungsi & kondisi alat",
+      "Informasi harga sewa",
+      "CTA WhatsApp",
+      "Desain outdoor & clean"
+    ],
+    "tech": ["React", "Tailwind CSS"],
+    "link": "https://sewa-camp.vercel.app/",
+    "type": "landing-page"
+  },
+  {
+    "id": "syamrent",
+    "title": "SyamRent",
+    "category": "Landing Page",
+    "industry": "Vehicle Rental",
+    "thumbnail": "/projects/carall.webp",
+    "picts": ["/projects/carall.webp", "/projects/carmb.png", "/projects/carpc.png"],
+    "description": "Landing page jasa rental kendaraan yang fokus pada kemudahan pemesanan dan konversi pelanggan.",
+    "problem": "Bisnis rental membutuhkan website sederhana namun meyakinkan agar calon pelanggan cepat memahami layanan dan langsung melakukan booking.",
+    "solution": "Membuat landing page dengan struktur konversi tinggi, CTA WhatsApp langsung, dan tampilan mobile-first.",
+    "features": [
+      "Hero section dengan CTA kuat",
+      "Daftar kendaraan mobil & motor",
+      "Informasi harga & paket sewa",
+      "Tombol booking WhatsApp",
+      "Desain responsif"
+    ],
+    "tech": ["React", "Tailwind CSS", "Framer Motion"],
+    "link": "https://syamrent.vercel.app/",
+    "type": "landing-page"
   }
 ]

@@ -85,7 +85,7 @@ export default function WhyMe() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.4 }}
-          className="mt-20 text-center max-w-3xl mx-auto"
+          className="mt-40 text-center max-w-3xl mx-auto"
         >
           <p className="text-lg font-medium">✨ Fokus saya sederhana:</p>
           <p className="mt-2 opacity-80">

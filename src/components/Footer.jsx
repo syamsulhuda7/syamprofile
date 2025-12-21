@@ -85,22 +85,34 @@ export default function Footer() {
             <h4 className="font-semibold mb-4">Contact</h4>
             <ul className="space-y-3 text-sm opacity-80">
               <li className="flex items-center gap-2">
-                <FiMail /> syamdev@gmail.com
+                <FiMail /> syamsulhuda748@gmail.com
               </li>
               <li className="flex items-center gap-2">
-                <FiPhone /> +62 8xx xxxx xxxx
+                <FiPhone /> +62 812 2967 0740
               </li>
             </ul>
 
             {/* Social */}
             <div className="flex gap-4 mt-5">
-              <a href="#" className="hover:text-[var(--accent)]">
+              <a
+                target="_blank"
+                href="https://github.com/syamsulhuda7"
+                className="hover:text-[var(--accent)]"
+              >
                 <FiGithub size={18} />
               </a>
-              <a href="#" className="hover:text-[var(--accent)]">
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/syamsul-huda-harisul-muslimin"
+                className="hover:text-[var(--accent)]"
+              >
                 <FiLinkedin size={18} />
               </a>
-              <a href="#" className="hover:text-[var(--accent)]">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/syamsul_huda7?igsh=MTB5NDUweTdwOTU0dA=="
+                className="hover:text-[var(--accent)]"
+              >
                 <FiInstagram size={18} />
               </a>
             </div>
@@ -117,7 +129,7 @@ export default function Footer() {
           <span>
             © {new Date().getFullYear()} syamdev. All rights reserved.
           </span>
-          <span>Built with React, Tailwind CSS & Framer Motion</span>
+          <span>Built with React & Tailwind CSS</span>
         </motion.div>
       </div>
     </footer>

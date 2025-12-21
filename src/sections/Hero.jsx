@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import bg from "../assets/images/bg.webp";
 import ps from "../assets/images/syam.webp";
 import { PiHandWavingBold } from "react-icons/pi";
+import { Link } from "react-router";
 
 export default function Hero() {
   return (
@@ -80,12 +81,17 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-3">
             <button className="px-6 py-3 rounded-xl bg-[var(--accent)] text-white font-medium hover:scale-105 transition">
-              Lihat Project
+              <Link to="/projects">Lihat Project</Link>
             </button>
 
-            <button className="px-6 py-3 rounded-xl border border-white/30 hover:bg-white/10 transition">
+            <a
+              href="https://wa.me/6281229670740"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 rounded-xl border border-white/30 hover:bg-white/10 transition inline-flex items-center cursor-pointer"
+            >
               Konsultasi Gratis
-            </button>
+            </a>
           </div>
         </motion.div>
 
