@@ -8,8 +8,8 @@
     "thumbnail": "/projects/goldall.webp",
     "picts": ["/projects/goldall.webp", "/projects/goldmb.png", "/projects/goldpc.png"],
     "description": "Company profile brand perhiasan premium dengan visual luxury dan teknologi modern.",
-    "problem": "Brand perhiasan membutuhkan website yang mencerminkan eksklusivitas dan teknologi modern.",
-    "solution": "Desain luxury dengan dark mode, animasi halus, dan AR preview produk.",
+    "problem": "Brand perhiasan premium membutuhkan website yang mampu mencerminkan eksklusivitas produk sekaligus mengikuti tren teknologi modern agar terlihat berbeda dari kompetitor.",
+    "solution": "Merancang website company profile dengan visual luxury, dark mode elegan, animasi halus, serta fitur AR preview untuk meningkatkan pengalaman dan persepsi premium calon pelanggan",
     "features": [
       "Desain luxury (dark mode & gold accent)",
       "Showcase produk perhiasan",
@@ -29,8 +29,8 @@
     "thumbnail": "/projects/seedall.webp",
     "picts": ["/projects/seedall.webp", "/projects/seedmb.png", "/projects/seedpc.png"],
     "description": "Company profile perusahaan benih pertanian dengan fokus kredibilitas dan edukasi.",
-    "problem": "Perusahaan membutuhkan website resmi untuk membangun kepercayaan petani dan mitra.",
-    "solution": "Membuat website informatif, profesional, dan mudah dipahami.",
+    "problem": "Perusahaan benih pertanian membutuhkan website resmi yang mampu membangun kepercayaan petani, distributor, dan mitra melalui informasi yang jelas dan profesional.",
+    "solution": "Membangun website informatif dan mudah dipahami yang menampilkan profil perusahaan, produk benih, edukasi pertanian, serta informasi mitra dan distribusi secara terstruktur.",
     "features": [
       "Profil perusahaan & visi misi",
       "Informasi produk benih",
@@ -50,8 +50,8 @@
     "thumbnail": "/projects/decorall.webp",
     "picts": ["/projects/decorall.webp", "/projects/decormb.png", "/projects/decorpc.png"],
     "description": "Website jasa dekorasi acara untuk meningkatkan kepercayaan klien melalui visual.",
-    "problem": "Calon klien membutuhkan bukti visual hasil dekorasi sebelum memesan jasa.",
-    "solution": "Menampilkan galeri hasil dekorasi, paket layanan, dan testimoni klien.",
+    "problem": "Calon klien kesulitan menilai kualitas jasa dekorasi karena kurangnya visual hasil kerja dan informasi layanan yang jelas.",
+    "solution": "Membuat landing page visual-focused dengan galeri hasil dekorasi, paket layanan, testimoni klien, serta CTA konsultasi cepat untuk meningkatkan kepercayaan dan konversi.",
     "features": [
       "Galeri foto dekorasi",
       "Paket & layanan custom",
@@ -71,8 +71,8 @@
     "thumbnail": "/projects/campall.webp",
     "picts": ["/projects/campall.webp", "/projects/campmb.png", "/projects/camppc.png"],
     "description": "Landing page persewaan alat camping untuk pendaki dan pecinta alam.",
-    "problem": "Calon penyewa kesulitan mengetahui ketersediaan dan kondisi alat sebelum menyewa.",
-    "solution": "Menyediakan katalog alat camping yang jelas, informatif, dan mudah diakses melalui mobile.",
+    "problem": "Bisnis rental kendaraan membutuhkan website yang sederhana namun meyakinkan agar calon pelanggan cepat memahami layanan dan langsung melakukan booking.",
+    "solution": "Membuat landing page mobile-first dengan struktur konversi tinggi, hero section yang kuat, daftar kendaraan, informasi paket sewa, dan tombol booking WhatsApp langsung.",
     "features": [
       "Katalog alat camping",
       "Deskripsi fungsi & kondisi alat",
