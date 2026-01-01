@@ -1,6 +1,31 @@
 [
   
   {
+  "id": "weddingmaster",
+  "title": "Wedding Master",
+  "category": "Company Profile",
+  "industry": "Wedding & Event Organizer",
+  "thumbnail": "/projects/wmall.png",
+  "picts": [
+    "/projects/wmall.png",
+    "/projects/wmmb.png",
+    "/projects/wmpc.png"
+  ],
+  "description": "Website company profile Wedding Master yang menampilkan identitas brand, filosofi kerja, layanan, dan portofolio acara dengan tampilan elegan dan profesional.",
+  "problem": "Wedding organizer membutuhkan website yang mampu membangun kepercayaan calon klien sejak kunjungan pertama, menampilkan kualitas layanan, alur kerja yang jelas, serta dokumentasi acara secara visual tanpa terlihat berlebihan.",
+  "solution": "Merancang website company profile dengan desain modern dan elegan, struktur konten yang rapi, animasi halus, serta galeri portofolio visual untuk memperkuat citra profesional dan meningkatkan kepercayaan calon klien.",
+  "features": [
+    "Hero section dengan visual elegan dan storytelling brand",
+    "Halaman About berisi filosofi, tim, alur kerja, dan motto",
+    "Layanan wedding & event dalam format card informatif",
+    "Galeri portofolio acara (wedding & event)",
+    "Halaman Contact dengan berbagai opsi koneksi klien"
+  ],
+  "tech": ["React", "Tailwind CSS", "Framer Motion"],
+  "link": "https://wedding-master-jawc.vercel.app/",
+  "type": "company-profile"
+},
+  {
     "id": "goldlux",
     "title": "GoldLux",
     "category": "Company Profile",
