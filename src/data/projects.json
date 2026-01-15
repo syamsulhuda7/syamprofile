@@ -1,5 +1,27 @@
 [
-  
+  {
+  "id": "videocourse",
+  "title": "Video Course",
+  "category": "Landing Page",
+  "industry": "Online Education / Digital Course",
+  "thumbnail": "/projects/vidall.png",
+  "picts": [
+    "/projects/vidall.png",
+    "/projects/vidmb.webp",
+    "/projects/vidpc.webp"
+  ],
+  "description": "Landing page Video Course yang dirancang untuk mempromosikan dan menjual kursus online melalui penyampaian value yang jelas, visual modern, serta call-to-action yang terarah.",
+  "problem": "Platform kursus online membutuhkan landing page yang mampu menjelaskan manfaat course secara singkat namun meyakinkan, membangun kredibilitas, serta mendorong pengunjung untuk segera mendaftar tanpa distraksi berlebihan.",
+  "solution": "Membangun landing page dengan struktur konten yang fokus pada value utama course, desain modern dan bersih, copywriting persuasif, serta call-to-action yang kuat untuk meningkatkan konversi pendaftaran.",
+  "features": [
+    "Hero section dengan headline dan value proposition yang jelas",
+    "Preview materi atau outline course",
+    "Call-to-action (CTA) pendaftaran yang menonjol"
+  ],
+  "tech": ["React", "Tailwind CSS", "Framer Motion"],
+  "link": "https://video-course.vercel.app/",
+  "type": "landing-page"
+},
   {
   "id": "weddingmaster",
   "title": "Wedding Master",
